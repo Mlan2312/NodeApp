@@ -13,7 +13,7 @@ pipeline {
         
     stage('Run App') {
       steps {
-        sh 'node main'
+        sh 'npm test'
       }
     }
     
