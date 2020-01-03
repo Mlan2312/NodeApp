@@ -1,26 +1,13 @@
 pipeline {
   agent any
-    
+ 
   tools {nodejs "node"}
-    
+ 
   stages {
-        
-    stage('Cloning Git') {
+    stage('Example') {
       steps {
-        git 'https://github.com/Mlan2312/NodeApp.git'
+        sh 'npm config ls'
       }
     }
-        
-    stage('Install dependencies') {
-      steps {
-        sh 'npm install'
-      }
-    }
-     
-    stage('Test') {
-      steps {
-         sh 'node main'
-      }
-    }      
   }
 }
