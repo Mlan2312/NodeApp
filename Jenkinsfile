@@ -13,7 +13,7 @@ pipeline {
         
     stage('Run App') {
       steps {
-        sh 'npm test'
+        cmd 'npm test'
       }
     }
     
