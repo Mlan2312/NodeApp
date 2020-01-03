@@ -13,9 +13,13 @@ pipeline {
         
     stage('Run App') {
       steps {
-        cmd 'npm test'
+        'npm install'
       }
     }
-    
+       stage('Run App') {
+      steps {
+        'node main'
+      }
+    }
   }
 }
