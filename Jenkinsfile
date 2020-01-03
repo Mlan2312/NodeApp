@@ -11,16 +11,11 @@ pipeline {
       }
     }
         
-    stage('Install dependencies') {
+    stage('Run App') {
       steps {
-        sh 'npm install'
+        sh 'node main'
       }
     }
-     
-    stage('Test') {
-      steps {
-         sh 'npm test'
-      }
-    }      
+    
   }
 }
