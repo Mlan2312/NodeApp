@@ -13,12 +13,12 @@ pipeline {
         
     stage('Run App') {
       steps {
-        'npm install'
+        sh'npm install'
       }
     }
        stage('Run App') {
       steps {
-        'node main'
+       sh'node main'
       }
     }
   }
