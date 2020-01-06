@@ -11,14 +11,9 @@ pipeline {
       }
     }
         
-    stage('Run App') {
-      steps {
-        sh'npm install'
-      }
-    }
        stage('Run App') {
       steps {
-       sh'node main'
+       sh 'node main.js'
       }
     }
   }
