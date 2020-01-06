@@ -1,7 +1,7 @@
 pipeline {
   agent any
     
-  tools {nodejs "node"}
+  tools {nodejs "nodev12.13.1"}
     
   stages {
         
@@ -11,10 +11,6 @@ pipeline {
       }
     }
         
-       stage('Run App') {
-      steps {
-       sh 'node main.js'
-      }
-    }
+ 
   }
 }
