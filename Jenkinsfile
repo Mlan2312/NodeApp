@@ -11,8 +11,7 @@ pipeline {
       
         stage('build') {
             steps {
-                 'npm install'
-                 'node main.js'
+                 echo "Hello node"
             }
         }
     }
