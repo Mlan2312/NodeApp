@@ -12,8 +12,7 @@ pipeline {
         stage('build') {
             steps {
                  echo "Hello node"
-                  npm install
-                  node main
+                 sh 'node main'
             }
         }
     }
